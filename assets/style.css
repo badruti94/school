@@ -1,0 +1,178 @@
+header{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+header .judul{
+    margin-bottom: 45px;
+}
+
+header .judul img{
+    float: left;
+    margin-right: 20px;
+}
+
+nav{
+    background-color: #88AA00;
+    margin: 0;
+    padding: 5px;
+    height: 48px;
+    line-height: 40px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+nav #pull{
+    display: none;
+}
+
+nav ul{
+    margin-left: -30px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #ffff00;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+}
+
+.carousel{
+    display: none;
+}
+
+main .container{ 
+    display: flex;
+}
+#content{
+    flex-basis: 70%;
+    padding-right: 2%;
+}
+
+.galeri .card{
+    width: 15rem;
+}
+
+.galeri a{
+    color: black;
+}
+.galeri a:hover{
+    color: green;
+    text-decoration: none;
+}
+
+
+aside{
+    flex-basis: 30%;
+}
+
+.gambar-kecil{
+    max-width: 220px;
+    border: 5px solid white;
+
+}
+
+.judul{
+    font-size: 28px;
+}
+
+.artikel-link{
+    color: black;
+}
+.artikel-link:hover{
+    color: darkorange;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #88AA00;
+}
+
+footer .judul{
+    font-size: 17px;
+}
+footer .atas{
+    display: flex;
+}
+
+footer article{
+    flex-basis: 25%;
+    margin-top: 2rem;
+}
+
+footer article div a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+footer article div a:hover{
+    color: #ffff00;
+    text-decoration: none;
+}
+footer .bawah p{
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    nav{
+        height: auto;
+    }
+    nav ul{
+        height: auto;
+        margin-top: -1rem;
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        margin: 0;
+        height: 2rem;
+    }
+    nav a#pull {
+		display: block;
+        background-color: #88AA00;
+        padding-left: 1.25rem;
+        margin: 0;
+        font-weight: bold;
+		width: 100%;
+        position: relative; 
+        color: #ffffff;
+        text-decoration: none;
+        
+	}
+
+    main .container{
+        flex-direction: column;
+    }
+
+    .gambar-kecil{
+        width: 120px;
+    }
+
+    .galeri .card{
+        width:7.5rem;
+    }
+    .galeri .card-text a{
+        font-size: 14px;
+    }
+
+    aside{
+        margin-top: 5rem;
+    }
+
+    footer .atas{
+        flex-direction: column;
+    }
+}
